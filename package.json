@@ -1,0 +1,23 @@
+{
+  "name": "web_crawler",
+  "version": "1.0.0",
+  "description": "This is a web crawler application demo used for learning purposes",
+  "main": "main.js",
+  "scripts": {
+    "start": "node main.js",
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/DanielPham311/web_crawler.git"
+  },
+  "author": "Pham Quoc Duy",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/DanielPham311/web_crawler/issues"
+  },
+  "homepage": "https://github.com/DanielPham311/web_crawler#readme",
+  "devDependencies": {
+    "jest": "^29.7.0"
+  }
+}
