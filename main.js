@@ -1,5 +1,22 @@
-const curDate = new Date()
+const {crawlPage} = require('./crawl.js')
 
-let year = curDate.getFullYear()
+function main()
+{
+    if (process.argv.length < 3)
+    {
+        console.log("No website provided")
+        process.exit(1)
+    }
 
-console.log(year)
+    if (process.argv.length > 3)
+    {
+        console.log("More than 1 website provided")
+        process.exit(1)
+    }
+
+    const baseURL = process.argv[2]
+    console.log(`Starting crawl on ${baseURL}`)
+    crawlPage(baseURL)
+}
+
+main()
